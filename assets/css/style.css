@@ -163,10 +163,11 @@ nav a {
   cursor: pointer;
   display: grid;
   align-content: end;
+  border: 5px solid #5db1b1;
 }
 
 .heading {
-  background-color: #86ffff;
+  background-color: #5db1b1;
   padding: 15px;
   height: 80px;
   bottom: 20px;
