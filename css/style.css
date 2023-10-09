@@ -69,6 +69,18 @@ nav a {
   background-size: 120% 100%;
 }
 
+#message {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  width: 40%;
+}
+
+.hero-banner h2 {
+  background-color: white;
+
+}
+
 /* about me */
 #about {
   margin-top: 20px;
@@ -195,4 +207,53 @@ footer {
     font-size: 32px;
   }
 
+
+  @media only screen and (max-width: 600px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+    nav {
+      display: none;
+    }
+    header h1{
+      display: absolute;
+      width: 100%;
+    }
+
+    #projectGrid {
+      grid-template-rows: 300px 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "project1"
+        "project2"
+        "project3"
+        "project4"
+        "project5"
+      ;
+      margin: 5px 5px;
+    }
+        
+    .hero-banner {
+      height: 80px;
+    }
+
+    .hero-banner h2 {
+      position: static;
+      margin: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    #about {
+      margin-bottom: 100px;
+    }
+    #work {
+      margin-top: 50px;
+    }
+  
+    .contact {
+      display: none;
+    }
+  }
 
