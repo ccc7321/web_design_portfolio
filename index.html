@@ -12,12 +12,14 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Chak Chan</h1>
-      <nav>
-        <p><a title="Go to about me page" href="secondary/about_me.html">About me<a></p>
-        <p><a title="aboutmepage" href="secondary/about_me.html">Work</a></p>
-        <p><a title="ContactInfo" href="secondary/about_me.html">Contact me</a></p>
-        <p><a title="aboutmepage" href="secondary/about_me.html">Resume</a></p>
+    <div class="left">
+      <h1>Chak Chan</h1>
+    </div>
+      <nav class="right">
+        <p><a href="#about">About me</a></p>
+        <p><a href="#work">Work</a></p>
+        <p><a href="#contact">Contact me</a></p>
+        <p><a title="Resume" href="secondary/Resume.html">Resume</a></p>
       </nav>
   </header>
 
@@ -31,8 +33,17 @@
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
+    <div class="left">
       <h2>About Me</h2>
-      <h3>Insert some random paragraphs later</h3>
+    </div>
+    <div class="right">
+      <h3>Currently working as a graduate process engineer with Sweco UK limited, looking for a career change into frontend web design</h3>
+      <ul>
+        <li>Standardising river support borehole design</li>
+        <li>Acting process engineer for river support schemes HAZOP</li>
+      </ul>
+      <h3>Some hobbies which I like to do include bouldering, basketball and video games</h3>
+    </div>
     </section>
 
     <!-- portfolio container -->
@@ -41,26 +52,49 @@
     </section>
     <section id="projectGrid">
       <div id="project1" class="projectGridArea">
-        <div class="heading">Project1</div>
+        <div class="heading">
+        <h3>Surf Report</h3>
+        <h4 class="subheading">MERN stack</h4>
+      </div>
       </div>
       <div id="project2" class="projectGridArea">
-        <div class="heading">Project2</div>
+        <div class="heading">
+        <h3>LED Wall</h3>
+        <p class="subheading">Node/IOT</p>
+        </div>
       </div>
       <div id="project3" class="projectGridArea">
-        <div class="heading">Project3</div>
+        <div class="heading">
+        <h3>Calculator</h3>
+        <h4 class="subheading">React/JavaScript/CSS</h4>
       </div>
+    </div>
       <div id="project4" class="projectGridArea">
-        <div class="heading">Project4</div>
+        <div class="heading">
+        <h3>Pastel Puzzles</h3>
+        <h4 class="subheading">MERN Stack</h4>
       </div>
+    </div>
       <div id="project5" class="projectGridArea">
-        <div class="heading">Project5</div>
+        <div class="heading">
+        <h3>Run Buddy</h3>
+        <h4 class="subheading"> HTML/CSS</h4>
       </div>
+    </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
+    <footer class="page-section contact">
+      <div class="left">
+          <h2>Contact Me</h2>
+      </div>
+      <section id="contact">
+          <p><a title="Github" href="https://github.com/ccc7321">Github<a></p>
+          <p  id="Gmail"><a href="https://gmail.com/">chakcheong@gmail.com</a></p>
+          <p><a title="Twitter" href="https://twitter.com/home">Twitter</a></p>
+          <p><a title="Spotify" href="https://open.spotify.com/__noul__?pfhp=2c2ccb58-8a92-4713-a1c0-8b43b3090b49">Spotify</a></p>
+          </section>
+    </footer>
   </main>
 </body>
 

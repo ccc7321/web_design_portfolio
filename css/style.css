@@ -8,6 +8,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   font-weight: 200;
+  background-color: aliceblue;
 }
 
 a {
@@ -32,13 +33,16 @@ p {
 header {
   display: flex;
   flex-direction: row;
-  margin: 0px 5%;
-  border: 1px solid blue;
+  margin: 0px;
+  background-color: rgb(63, 63, 63);
 }
 
 header h1 {
-  width: 25%;
+  padding-right: 20px;
+  margin-left: 80px;
   font-weight: 500;
+  color: #303030;
+  background-color: #118686;
 }
 
 nav {
@@ -46,11 +50,15 @@ nav {
   width: 50%;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid blue;
 }
 
-nav p {
+nav a {
   text-decoration: none;
+  border-bottom: 5px solid #118686;
+  border-radius: 3px;
+  color: #86ffff;
+  padding: 0 10px;
+  margin: 0 10px;
 }
 
 /* Hero Banner styling */
@@ -62,12 +70,26 @@ nav p {
 }
 
 /* about me */
+#about {
+  margin-top: 20px;
+  display: flex;
+  height: 200px;
+}
+
+.right {
+  width: 75%;
+  margin-left: 20px;
+}
+
+.right h3 {
+  font-size: 18px;
+}
 
 /* Portfolio container */
 #work {
   text-align: center;
   border-bottom: 2px solid black;
-  width: 300px;
+  width: 75%;
   margin: 50px auto;
 }
 
@@ -122,3 +144,55 @@ nav p {
   display: grid;
   align-content: end;
 }
+
+.heading {
+  background-color: #86ffff;
+  padding: 15px;
+  height: 80px;
+  bottom: 20px;
+  width: 220px;
+  color: rgb(21, 24, 0);
+  font-size: 18px;
+  border: 2px solid #2370af;
+  position: relative;
+  z-index: 100;
+}
+
+/* Contact Me (Footer) */
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 5%;
+  height: 80px;
+}
+
+#contact {
+  display: flex;
+  order: 1px solid blue;
+  width: 75%;
+  margin-left: 10px;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: ;
+}
+
+#contact a{
+  color: black;
+  border-bottom: 3px solid black;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.left {
+  width: 25%;
+  border-right: 5px solid rgb(125, 151, 235);
+  text-align: right;
+  align-items: center;
+  }
+
+  .left h2 {
+    margin-right: 20px;
+    font-size: 32px;
+  }
+
+
