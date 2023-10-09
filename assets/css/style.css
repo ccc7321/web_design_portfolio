@@ -132,22 +132,22 @@ nav a {
 
 #project1 {
   grid-area: project1;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
 
 }
 #project2 {
   grid-area: project2;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
 }
 
 #project3 {
   grid-area: project3;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 
 #project4 {
   grid-area: project4;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/02-portfolio-3.jpg");
 }
 
 #project5 {
