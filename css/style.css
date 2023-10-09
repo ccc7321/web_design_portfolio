@@ -7,6 +7,11 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -20,4 +25,100 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* Header styling */
+
+header {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+  border: 1px solid blue;
+}
+
+header h1 {
+  width: 25%;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+nav p {
+  text-decoration: none;
+}
+
+/* Hero Banner styling */
+.hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: 120% 100%;
+}
+
+/* about me */
+
+/* Portfolio container */
+#work {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+/* ProjectGrid CSS */
+#projectGrid {
+  display: grid;
+  margin: 0px 5%;
+  min-height: 800px;
+  height: 70vh;
+  grid-template-columns:1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "project1 project1"
+  "project1 project1"
+  "project1 project1"
+  "project2 project3"
+  "project4 project5"
+  ;
+}
+
+#project1 {
+  grid-area: project1;
+  background-image: url("../images/02-portfolio-1.jpg");
+
+}
+#project2 {
+  grid-area: project2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#project3 {
+  grid-area: project3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#project4 {
+  grid-area: project4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#project5 {
+  grid-area: project5;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.projectGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
 }
