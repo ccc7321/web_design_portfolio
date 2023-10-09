@@ -63,11 +63,15 @@ nav a {
 
 /* Hero Banner styling */
 .hero-banner {
-  background-image: url(../images/02-hero-bg.jpg);
+  background-image: url("../images/ccchan.jpg"), url("../images/02-hero-bg.jpg");
+  background-position: right center, center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%, cover;
+  color: #384047;
+  font-family: "Nunito", sans-serif;
   height: 500px;
-  width: 100%;
-  background-size: 120% 100%;
 }
+
 
 #message {
   position: relative;
